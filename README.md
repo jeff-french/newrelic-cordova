@@ -15,7 +15,7 @@ Configuration
 
 Get your mobile app's token from the New Relic portal and add it to your `config.xml` like so:
 
-`<preference name="NewRelicApplicationToken" value="YOUR_TOKEN_HERE" />
+`<preference name="NewRelicApplicationToken" value="YOUR_TOKEN_HERE" />`
 
 License
 ==============
