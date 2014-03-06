@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    xmlns:rim="http://www.blackberry.com/ns/widgets"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    id="com.newrelic.cordova"
+    version="1.0.0">
+    <name>NewRelic</name>
+    <description>This plugin adds New Relic Mobile Monitoring to your application.</description>
+    <license>Apache 2.0</license>
+    <keywords>cordova,newrelic,monitoring</keywords>
+
+    <engines>
+            <engine name="cordova" version=">=3.3.0" />
+    </engines>
+
+    <!-- ios -->
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="NewRelic">
+                <param name="ios-package" value="CDVNewRelic" onload="true" />
+            </feature>
+            <preference name="NewRelicApplicationToken" value="CHANGEME" />
+        </config-file>
+        
+        <header-file src="src/ios/CDVNewRelic.h" />
+        <source-file src="src/ios/CDVNewRelic.m" />
+        <framework src="src/ios/NewRelicFramework/NewRelicAgent.framework" custom="true" />
+        <framework src="CoreTelephony.framework" />
+        <framework src="SystemConfiguration.framework" />
+        <framework src="libz.dylib" />
+    </platform>
+
+</plugin>

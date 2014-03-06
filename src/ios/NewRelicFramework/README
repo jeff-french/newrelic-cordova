@@ -1,0 +1,25 @@
+Welcome to New Relic!
+
+For installation instructions, please log in to http://rpm.newrelic.com/ and click on the Mobile Phone icon in the left navigation. If you do not see navigation on the left side, click the Account Settings link in the upper right of the page.
+
+If you have not created a Mobile Application:
+* click "Add a new mobile app",
+* name your application, and
+* download the New Relic agent for your platform and follow the instructions.
+
+If you have previously created a Mobile Application:
+* click the name of your mobile app,
+* choose Install from the Settings tab on the top of the screen, and
+* download the New Relic agent for your platform and follow the instructions.
+
+UPGRADING
+
+To upgrade the New Relic SDK, completely replace the NewRelicAgent.framework folder in your app directory with the version included in this file, then clean and build your app.
+
+RELEASE NOTES
+
+Please refer to https://newrelic.com/docs/releases/ios for the latest release notes.
+
+
+Copyright ©2013 New Relic, Inc. All Rights Reserved.
+See LICENSE file for license details and third-party library information.
