@@ -8,7 +8,9 @@ __NOTE:__ This plugin requires Cordova / PhoneGap >= 3.3.0 in order to support i
 Installation
 ===============
 
-`cordova plugin install com.newrelic.cordova`
+`cordova plugin install http://github.com/jeff-french/newrelic-cordova`
+
+__NOTE:__ There is currently an [issue](https://issues.apache.org/jira/browse/CB-6092) with publishing plugins that have frameworks with symlinks. Please install using the url rather than just the identifier.
 
 Configuration
 ===============
